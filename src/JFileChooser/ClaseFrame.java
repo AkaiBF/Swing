@@ -41,7 +41,7 @@ public class ClaseFrame extends JFrame implements ActionListener
 			contenedor=getContentPane();
 			contenedor.setLayout(null);
 			
-			/*Creamos el objeto*/
+			/*Creamos el objeto fileChooser*/
 			fileChooser=new JFileChooser();
 			
 			/*Propiedades del Label, lo instanciamos, posicionamos y
