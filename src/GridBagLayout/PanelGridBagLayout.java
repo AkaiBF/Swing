@@ -42,8 +42,8 @@ public class PanelGridBagLayout extends JPanel {
 		
 		JPanel prueba = new JPanel();
 		prueba.setBackground(Color.CYAN);
-		getConstraints().gridx = 0; // El área de texto empieza en la columna dos.
-		getConstraints().gridy = 0; // El área de texto empieza en la fila dos
+		getConstraints().gridx = 0; // El área de texto empieza en la columna 0.
+		getConstraints().gridy = 0; // El área de texto empieza en la fila 0
 		getConstraints().gridwidth = 3; // El área de texto ocupa 3 columnas.
 		getConstraints().gridheight = 3; // El área de texto ocupa 3 filas.
 		getConstraints().weighty = 1.0;
@@ -53,29 +53,29 @@ public class PanelGridBagLayout extends JPanel {
 		//getConstraints().weightx = 0.0;
 		getConstraints().weighty = 0.0;
 		
-		getConstraints().gridx = 1; // El área de texto empieza en la columna cero.
-		getConstraints().gridy = 4; // El área de texto empieza en la fila cero
-		getConstraints().gridwidth = 1; // El área de texto ocupa dos columnas.
-		getConstraints().gridheight = 1; // El área de texto ocupa 2 filas.
+		getConstraints().gridx = 1; // El área de texto empieza en la columna 1.
+		getConstraints().gridy = 4; // El área de texto empieza en la fila 4.
+		getConstraints().gridwidth = 1; // El área de texto ocupa 1 columnas.
+		getConstraints().gridheight = 1; // El área de texto ocupa 1 filas.
 		add (new JButton("Arriba"), constraints);
 
-		getConstraints().gridx = 0; // El área de texto empieza en la columna dos.
-		getConstraints().gridy = 5; // El área de texto empieza en la fila dos
-		getConstraints().gridwidth = 1; // El área de texto ocupa dos columnas.
-		getConstraints().gridheight = 1; // El área de texto ocupa 2 filas.
+		getConstraints().gridx = 0; // El área de texto empieza en la columna 0.
+		getConstraints().gridy = 5; // El área de texto empieza en la fila 2
+		getConstraints().gridwidth = 1; // El área de texto ocupa 1 columnas.
+		getConstraints().gridheight = 1; // El área de texto ocupa 1 filas.
 		add (new JButton("Izquierda"), constraints);
 
 		
-		getConstraints().gridx = 2; // El área de texto empieza en la columna dos.
-		getConstraints().gridy = 5; // El área de texto empieza en la fila dos
-		getConstraints().gridwidth = 1; // El área de texto ocupa dos columnas.
-		getConstraints().gridheight = 1; // El área de texto ocupa 2 filas.
+		getConstraints().gridx = 2; // El área de texto empieza en la columna 2.
+		getConstraints().gridy = 5; // El área de texto empieza en la fila 5
+		getConstraints().gridwidth = 1; // El área de texto ocupa 1 columnas.
+		getConstraints().gridheight = 1; // El área de texto ocupa 1 filas.
 		add (new JButton("Derecha"), constraints);
 		
-		getConstraints().gridx = 1; // El área de texto empieza en la columna dos.
-		getConstraints().gridy = 6; // El área de texto empieza en la fila dos
-		getConstraints().gridwidth = 1; // El área de texto ocupa dos columnas.
-		getConstraints().gridheight = 1; // El área de texto ocupa 2 filas.
+		getConstraints().gridx = 1; // El área de texto empieza en la columna 1.
+		getConstraints().gridy = 6; // El área de texto empieza en la fila 6
+		getConstraints().gridwidth = 1; // El área de texto ocupa 1 columnas.
+		getConstraints().gridheight = 1; // El área de texto ocupa 1 filas.
 		add (new JButton("Abajo"), constraints);
 		
 
