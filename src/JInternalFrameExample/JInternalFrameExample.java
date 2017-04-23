@@ -1,3 +1,4 @@
+package JInternalFrameExample;
 import javax.swing.JInternalFrame;
 import javax.swing.JDesktopPane;
 import javax.swing.JMenu;
@@ -67,6 +68,7 @@ public class JInternalFrameExample extends JFrame {
 		JInternalFrameExample frame = new JInternalFrameExample();
 		frame.setVisible(true);
 	}
+	
 	class MyInternalFrame extends JInternalFrame {
 
 		private static final long serialVersionUID = 1L;
