@@ -1,5 +1,6 @@
 package JInternalFrameExample;
 import javax.swing.JInternalFrame;
+import javax.swing.JLabel;
 import javax.swing.JDesktopPane;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
@@ -58,6 +59,7 @@ public class JInternalFrameExample extends JFrame {
 		MyInternalFrame frame = new MyInternalFrame();
 		frame.setVisible(true);
 		// Every JInternalFrame must be added to content pane using JDesktopPane
+		frame.add(new JLabel ("Nueva ventana."));
 		getJdpDesktop().add(frame);
 		try {
 			frame.setSelected(true);
