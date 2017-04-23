@@ -1,8 +1,6 @@
 package laf;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -17,9 +15,9 @@ import javax.swing.ButtonGroup;
 import javax.swing.KeyStroke;
 import java.awt.event.KeyEvent;
 import java.awt.event.InputEvent;
-import java.awt.Color;
-import javax.swing.JColorChooser;
 
+
+@SuppressWarnings("serial")
 public class Frame extends JFrame {
 
 	private JPanel contentPane;
@@ -45,6 +43,7 @@ public class Frame extends JFrame {
 	/**
 	 * Create the frame.
 	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public Frame() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);

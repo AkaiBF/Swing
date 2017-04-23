@@ -8,19 +8,16 @@
  */
 package PelotaConImagen;
 
-import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
-import java.awt.event.KeyEvent;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.JSeparator;
-import javax.swing.SwingConstants;
 
+
+@SuppressWarnings("serial")
 public class VentanaPrincipal extends JFrame {
 	final static int MAX_WIDTH = 800;
 	final static int MAX_HEIGHT = 600;

@@ -13,6 +13,7 @@ import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.KeyEvent;
 
+@SuppressWarnings("serial")
 public class TabbedPane extends JPanel {
     public TabbedPane() {
         super(new GridLayout(1, 1));

@@ -16,7 +16,6 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  * Clase que permite cargar una ventana con un area de texto
@@ -24,6 +23,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
  * @author Aythami y Ernesto
  *
  */
+@SuppressWarnings("serial")
 public class ClaseFrame extends JFrame implements ActionListener
 	{
 		private Container contenedor;
@@ -148,6 +148,7 @@ public class ClaseFrame extends JFrame implements ActionListener
 
 	 		try
 	 		{
+				@SuppressWarnings("unused")
 				String nombre="";
 				JFileChooser file=new JFileChooser();
 				file.showSaveDialog(this);

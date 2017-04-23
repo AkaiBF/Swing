@@ -20,7 +20,7 @@ public class WindowCardLayout{
     private JComboBox<String> combo;
     private String [] vectorCadena = {"panel1","panel2","panel3"};
 
-	public WindowCardLayout(){/*Constructor*/
+	public WindowCardLayout(){/*Constructor de WindowCardLayout*/
 		
 		//Upper Panel
         setEtiqueta(new JLabel("Select option"));

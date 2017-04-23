@@ -5,6 +5,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.SwingUtilities;
 
+@SuppressWarnings("serial")
 public class JTableExample extends JFrame
 {
     public JTableExample()

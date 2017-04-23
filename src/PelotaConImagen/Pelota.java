@@ -17,6 +17,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
+@SuppressWarnings("serial")
 public class Pelota extends JPanel{
 	public static final int INICIO_X_Y = 0;
 	public static final int MAX_DIR = 8;

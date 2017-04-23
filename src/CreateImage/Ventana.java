@@ -2,6 +2,7 @@ package CreateImage;
 
 import javax.swing.JFrame;
 
+@SuppressWarnings("serial")
 public class Ventana extends JFrame {
 	
 	public Ventana(){
@@ -12,6 +13,7 @@ public class Ventana extends JFrame {
 		add(new ImageExample());
 		setVisible(true);
 	}
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Ventana frame = new Ventana();

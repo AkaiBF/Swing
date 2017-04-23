@@ -14,6 +14,7 @@ import java.awt.Graphics;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
+@SuppressWarnings("serial")
 public class JuegoPanel extends JPanel {
 	
 	Pelota ball ;
