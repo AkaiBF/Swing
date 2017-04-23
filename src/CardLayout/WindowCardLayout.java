@@ -21,62 +21,60 @@ public class WindowCardLayout{
     private String [] vectorCadena = {"panel1","panel2","panel3"};
 
 	public WindowCardLayout(){/*Constructor*/
-        construyePanelSuperior();
-        construyePanelInf1();
-        construyePanelInf2();
-        construyePanelInf3();
-        construyePanelInferior();
-        construyeVentana();}
-
-    public void construyePanelSuperior(){
-        setEtiqueta(new JLabel("Elegir Opcion"));
+		
+		//Upper Panel
+        setEtiqueta(new JLabel("Select option"));
         setPanelSuperior(new JPanel());
-        getPanelSuperior().setBorder(BorderFactory.createTitledBorder("Demo por INFORUX"));
+       getPanelSuperior().setBorder(BorderFactory.createTitledBorder("Upper Panel"));
         setCombo(new JComboBox<String>(getVectorCadena() ));
         getPanelSuperior().setLayout(new FlowLayout());
         getPanelSuperior().add(getEtiqueta());
         getPanelSuperior().add(getCombo());
-        getPanelSuperior().getPreferredSize();}
-
-    public void construyePanelInferior(){
+        getPanelSuperior().getPreferredSize();
+        
+        //Lower Panel One
+        setEtiqueta1(new JLabel("Panel 1 selected."));
+        setPanelInf1(new JPanel(new FlowLayout()));
+        getPanelInf1().setBackground(Color.white);
+        getPanelInf1().add(getEtiqueta1());
+        
+        //Lower Panel Two
+        setEtiqueta2( new JLabel("Now, u are watching the Panel 2."));
+        setPanelInf2(new JPanel(new FlowLayout()));
+        getPanelInf2().setBackground(Color.orange);
+        getPanelInf2().add(getEtiqueta2());
+        
+        //Lower Panel Three
+        setEtiqueta3(new JLabel("And now, u are watching the Panel 3."));
+        setPanelInf3(new JPanel(new FlowLayout()));
+        getPanelInf3().setBackground(Color.green);
+        getPanelInf3().add(getEtiqueta3());
+        
+        //Lower Panel CardLayout
         setPanelInferior(new JPanel());
-        getPanelInferior().setBorder(BorderFactory.createTitledBorder("Panel Inferior"));
+        getPanelInferior().setBorder(BorderFactory.createTitledBorder("Lower Panel"));
         setCardLayout(new CardLayout());
-        getPanelInferior().setLayout(cardLayout);
+        getPanelInferior().setLayout(getCardLayout());
         /*Al agregar necesitamos 2 argumentos, el objeto a agregar y un nombre referencial */
         getPanelInferior().add(getPanelInf1(), getVectorCadena()[0]);
         getPanelInferior().add(getPanelInf2(), getVectorCadena()[1]);
-        getPanelInferior().add(getPanelInf3(), getVectorCadena()[2]);}
-
-    public void construyePanelInf1(){
-        setEtiqueta1(new JLabel("Has Seleccionado el Panel 1"));
-        setPanelInf1(new JPanel(new FlowLayout()));
-        getPanelInf1().setBackground(Color.white);
-        getPanelInf1().add(getEtiqueta1());}
-
-    public void construyePanelInf2(){
-        setEtiqueta2( new JLabel("increiblemente estas viendo el panel2"));
-        setPanelInf2(new JPanel(new FlowLayout()));
-        getPanelInf2().setBackground(Color.orange);
-        getPanelInf2().add(getEtiqueta2());}
-
-    public void construyePanelInf3(){
-        setEtiqueta3(new JLabel("CardLayout permite solo uno a la vez, esta vez el panel 3"));
-        setPanelInf3(new JPanel(new FlowLayout()));
-        getPanelInf3().setBackground(Color.green);
-        getPanelInf3().add(etiqueta3);}
+        getPanelInferior().add(getPanelInf3(), getVectorCadena()[2]);
+        
+        //Contruct Window
+        construyeVentana();
+	}
 
     public void construyeVentana(){
         setFrame(new JFrame());
-        getFrame().setTitle("Ejemplo CardLayout");
+        getFrame().setTitle("CardLayout Example");
         getFrame().setLayout(new BoxLayout(frame.getContentPane(),BoxLayout.Y_AXIS));
-        getFrame().add(panelSuperior);
-        getFrame().add(panelInferior);
+        getFrame().add(getPanelSuperior());
+        getFrame().add(getPanelInferior());
         getFrame().getPreferredSize();
         getFrame().pack();
         getFrame().setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         getFrame().setVisible(true);
-        //creamos el objeto controlador de eventos
+        //Add Event Listener
         ControlCardLayout control= new ControlCardLayout(this);
         getCombo().addActionListener(control);
         }

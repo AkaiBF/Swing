@@ -7,28 +7,27 @@ import java.awt.GridBagLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-/**
- * 
- * Atributos de GridBagConstrains
- * 
- * gridx : Este atributo nos dice la posicion X del componente.
- * gridy : Este atributo nos dice la posicion Y del componente.
- * 
- * 
- * Por defecto, cada componente usa un tamaño de 1 x 1. Para cambiar dicho tamaño, usaremos:
- * 
- * gridwidth: Este atributo nos dice cuantas celdas ocupa en horizontal nuestro componente.
- * gridheight: Este atributo nos dice cuantas celdas ocupa en vertical nuestro componente.
- * 
- * 
- * Con esto, solo le decimos que ocupa, pero la fila o columna seguirá siendo de 1 x 1
- * Ahora debemos decirle a los componente si queremos que se estire o no.
- * 
- * weightx: Indica si estirar las filas.
- * weighty: Indica si estirar las columnas.
- * 
- * Estos atributos tienen un valor 1.0, si quieres que estire, o 0.0 en caso contrario.
- * Un detalle importante, estos atributos afectan a toda la fila o columna, con lo cual cada vez que añadamos un componente a esa fila, le debemos dar el mismo valor que tenia. 
+/** 
+* Attributes of GridBagConstrains
+*
+* Gridx: This attribute tells us the X position of the component.
+* Gridy: This attribute tells us the Y position of the component.
+*
+*
+* By default, each component uses a size of 1 x 1. To change the size said, we will use:
+*
+* Gridwidth: This attribute tells us how many cells horizontally occupy our component.
+* Gridheight: This attribute tells us how many cells our vertical component occupies.
+*
+*
+* With this, we only say it occupies, but the row or column will still be 1 x 1
+* Now we must tell the components whether we want it stretched or not.
+*
+* Weight: Indicates whether to stretch the rows.
+* Weight: Indicates whether to stretch the columns.
+*
+* These attributes have a value of 1.0, if you want to calculate, or 0.0 otherwise.
+* An important detail, these attributes affect the entire row of the column, so each time you add a component to that row, the right to give the same value as it had.
  */
 public class PanelGridBagLayout extends JPanel {
 	
@@ -40,23 +39,22 @@ public class PanelGridBagLayout extends JPanel {
 		
 		setLayout(new GridBagLayout());
 		
-		JPanel prueba = new JPanel();
-		prueba.setBackground(Color.CYAN);
-		getConstraints().gridx = 0; // El área de texto empieza en la columna 0.
-		getConstraints().gridy = 0; // El área de texto empieza en la fila 0
-		getConstraints().gridwidth = 3; // El área de texto ocupa 3 columnas.
-		getConstraints().gridheight = 3; // El área de texto ocupa 3 filas.
+		JPanel pruebaPanel = new JPanel();
+		pruebaPanel.setBackground(Color.CYAN);
+		getConstraints().gridx = 0;
+		getConstraints().gridy = 0; //
+		getConstraints().gridwidth = 3;
+		getConstraints().gridheight = 3; 
 		getConstraints().weighty = 1.0;
 		getConstraints().weightx = 1.0;
 		constraints.fill = GridBagConstraints.BOTH;
-		add (prueba, constraints);
-		//getConstraints().weightx = 0.0;
+		add (pruebaPanel, constraints);
 		getConstraints().weighty = 0.0;
 		
-		getConstraints().gridx = 1; // El área de texto empieza en la columna 1.
-		getConstraints().gridy = 4; // El área de texto empieza en la fila 4.
-		getConstraints().gridwidth = 1; // El área de texto ocupa 1 columnas.
-		getConstraints().gridheight = 1; // El área de texto ocupa 1 filas.
+		getConstraints().gridx = 1;
+		getConstraints().gridy = 4;
+		getConstraints().gridwidth = 1;
+		getConstraints().gridheight = 1;
 		add (new JButton("Arriba"), constraints);
 
 		getConstraints().gridx = 0; // El área de texto empieza en la columna 0.
