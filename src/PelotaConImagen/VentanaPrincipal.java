@@ -10,7 +10,7 @@ package PelotaConImagen;
 
 import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
+import java.awt.*;
 import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -52,6 +52,57 @@ public class VentanaPrincipal extends JFrame {
 	 * Metodo que añade los botones al panel de abajo con un GridBagLayout.
 	 */
 	public void aniadirBotones(){
+<<<<<<< HEAD
+		JPanel contenedor = new JPanel();
+		contenedor.setLayout(new FlowLayout());
+		JPanel panelabajo = new JPanel();
+		GridBagLayout gridbag = new GridBagLayout();
+	    GridBagConstraints gbc = new GridBagConstraints();
+	    panelabajo.setLayout(gridbag);
+	    gbc.fill = GridBagConstraints.BOTH;
+	    
+	    gbc.weightx = 0.5;
+	    gbc.gridx = 1;
+	    gbc.gridy = 0;
+	    getUp().setMnemonic(DIR_UP);
+	    panelabajo.add(getUp(), gbc);
+	    
+	    gbc.gridx = 1;
+	    gbc.gridy = 2;
+	    getDown().setMnemonic(DIR_DOWN);
+	    panelabajo.add(getDown(), gbc);
+	    
+	    gbc.gridx = 0;
+	    gbc.gridy = 1;
+	    getLeft().setMnemonic(DIR_LEFT);
+	    panelabajo.add(getLeft(), gbc);
+	    
+	    gbc.gridx = 2;
+	    gbc.gridy = 1;
+	    getRight().setMnemonic(DIR_RIGHT);
+	    panelabajo.add(getRight(), gbc);
+	    
+	    gbc.gridx = 0;
+	    gbc.gridy = 0;
+	    panelabajo.add(getNoroeast(), gbc);
+	    
+	    gbc.gridx = 2;
+	    gbc.gridy = 0;
+	    panelabajo.add(getNoreast(), gbc);
+	    
+	    gbc.gridx = 0;
+	    gbc.gridy = 2;
+	    panelabajo.add(getSouoeast(), gbc);
+	    
+	    gbc.gridx = 2;
+	    gbc.gridy = 2;
+	    panelabajo.add(getSoueast(), gbc);
+	    
+	    contenedor.add(panelabajo);
+	    add(contenedor);
+		
+	}
+=======
 	JPanel contenedor = new JPanel();
     contenedor.setLayout(new FlowLayout(FlowLayout.CENTER));
     JPanel panelabajo = new JPanel();
@@ -99,6 +150,7 @@ public class VentanaPrincipal extends JFrame {
   
     contenedor.add(panelabajo);
     add(contenedor);}
+>>>>>>> branch 'master' of https://github.com/AkaiBF/Swing.git
 
 	/**
 	 * Getter de up
