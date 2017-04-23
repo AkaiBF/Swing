@@ -1,8 +1,6 @@
 package CardLayout;
 
-import javax.swing.JButton;
 import javax.swing.JLabel;
-import javax.swing.JTextField;
 import javax.swing.JPanel;
 import javax.swing.BoxLayout;
 import javax.swing.JFrame;
@@ -19,7 +17,7 @@ public class WindowCardLayout{
     private CardLayout cardLayout;
     private JPanel panelSuperior, panelInferior,panelInf1, panelInf2, panelInf3;
     private JLabel etiqueta, etiqueta1, etiqueta2,etiqueta3;
-    private JComboBox combo;
+    private JComboBox<String> combo;
     private String [] vectorCadena = {"panel1","panel2","panel3"};
 
 	public WindowCardLayout(){/*Constructor*/
@@ -34,7 +32,7 @@ public class WindowCardLayout{
         setEtiqueta(new JLabel("Elegir Opcion"));
         setPanelSuperior(new JPanel());
         getPanelSuperior().setBorder(BorderFactory.createTitledBorder("Demo por INFORUX"));
-        setCombo(new JComboBox(getVectorCadena() ));
+        setCombo(new JComboBox<String>(getVectorCadena() ));
         getPanelSuperior().setLayout(new FlowLayout());
         getPanelSuperior().add(getEtiqueta());
         getPanelSuperior().add(getCombo());
@@ -241,14 +239,14 @@ public class WindowCardLayout{
 	/**
 	 * @return the combo
 	 */
-	public JComboBox getCombo() {
+	public JComboBox<String> getCombo() {
 		return combo;
 	}
 
 	/**
 	 * @param combo the combo to set
 	 */
-	public void setCombo(JComboBox combo) {
+	public void setCombo(JComboBox<String> combo) {
 		this.combo = combo;
 	}
 

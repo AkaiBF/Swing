@@ -6,7 +6,6 @@ import java.awt.GridBagLayout;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
-import javax.swing.JTextArea;
 
 /**
  * 
@@ -33,6 +32,7 @@ import javax.swing.JTextArea;
  */
 public class PanelGridBagLayout extends JPanel {
 	
+	private static final long serialVersionUID = 1L;
 	GridBagConstraints constraints = new GridBagConstraints();
 	
 	

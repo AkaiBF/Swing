@@ -28,6 +28,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
  */
 public class ClaseFrame extends JFrame implements ActionListener
 	{
+	private static final long serialVersionUID = 1L;
 		private Container contenedor;
 		JLabel labelTitulo;/*declaramos el objeto Label*/
 		JTextArea areaDeTexto;
