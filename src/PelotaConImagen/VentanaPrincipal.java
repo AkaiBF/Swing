@@ -52,7 +52,7 @@ public class VentanaPrincipal extends JFrame {
 	}
 	
 	/**
-	 * Metodo que añade los botones al panel de abajo con un GridBagLayout
+	 * Metodo que añade los botones al panel de abajo con un GridBagLayout.
 	 */
 	public void aniadirBotones(){
 	JPanel contenedor = new JPanel();
