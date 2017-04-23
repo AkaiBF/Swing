@@ -6,7 +6,7 @@ public class Ventana extends JFrame {
 	
 	public Ventana(){
 		setTitle("Image Example");
-		setSize(400,400);
+		setSize(200,200);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 		add(new ImageExample());
