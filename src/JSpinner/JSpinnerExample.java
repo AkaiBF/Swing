@@ -42,6 +42,7 @@ public class JSpinnerExample extends JFrame {
 			}
 		});
 		
+		setTitle("Ejemplo JSpinner");
 		setLayout(new FlowLayout());
 		add(spinner);
 		add(textfield);
